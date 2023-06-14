@@ -1,0 +1,24 @@
+【06-14：测试php爬虫】
+file_get_contents() 是一个 PHP 内置函数，用于读取文件内容或远程 URL 的内容并将其作为字符串返回。
+
+函数原型：
+
+php
+
+string file_get_contents(string $filename, bool $use_include_path = false, resource $context = null, int $offset = 0, int $maxlen = null)
+
+参数说明：
+
+    $filename：要读取的文件名或远程 URL。
+    $use_include_path（可选）：布尔值，指示是否在 include 路径中搜索文件。默认为 false。
+    $context（可选）：资源类型，用于指定上下文选项，例如 HTTP 请求的头信息等。默认为 null。
+    $offset（可选）：整数，指定读取的起始位置。默认为 0。
+    $maxlen（可选）：整数，指定最大读取的字节数。默认为 null，表示读取整个文件。
+
+返回值：
+
+    如果读取成功，则返回文件内容的字符串。
+    如果读取失败，则返回 false。
+
+
+str_get_html（）：simple_html_dom.php库中的函数：内部会去除tag标签,去除非html部分代码
